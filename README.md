@@ -1,16 +1,21 @@
 # UI Web Test Automation Framework Using Selenium
 
-Framework otomatisasi pengujian UI Website menggunakan **Java**, **Selenium WebDriver**, **Cucumber (BDD)**, dan **Gradle**.  
-Framework ini memungkinkan penulisan test case dalam format cerita (Gherkin), sehingga mudah dipahami oleh tim teknis maupun non-teknis.  
+A UI Web Test Automation Framework built with Java, Selenium WebDriver, Cucumber (BDD), and Gradle.
+This framework allows writing test cases in Gherkin story format, making them easy to understand for both technical and non-technical team members.
 
 ---
 
-## 🚀 Fitur Utama
-- **Cucumber + Gherkin** → Menulis test case seperti cerita  
-- **Selenium WebDriver** → Menjalankan otomatisasi di browser  
-- **JUnit** → Menjalankan test case Java  
-- **Gradle** → Build automation & dependency management  
-- **Page Object Model (POM)** → Struktur kode rapi, reusable, mudah dirawat  
-- **Reporting** → Hasil eksekusi test otomatis  
+## 🚀 Key Feature
+Cucumber + Gherkin → Write test cases in a human-readable story format
+
+Selenium WebDriver → Automate browser interactions
+
+JUnit → Execute and manage Java-based test cases
+
+Gradle → Build automation and dependency management
+
+Page Object Model (POM) → Clean, reusable, and maintainable test structure
+
+Reporting → Automatically generate test execution reports
 
 ---
