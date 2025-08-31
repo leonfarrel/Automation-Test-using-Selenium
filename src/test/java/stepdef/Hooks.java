@@ -16,9 +16,9 @@ public class Hooks extends Driver {
 //        Thread.sleep(2000);
         driver.close();
     }
-    @AfterStep
-    public void afterStep() throws InterruptedException {
-        Thread.sleep(2000);
-    }
+//    @AfterStep
+//    public void afterStep() throws InterruptedException {
+//        Thread.sleep(2000);
+//    }
 
 }
