@@ -17,7 +17,7 @@ public class LoginPage {
     By visualUser = By.cssSelector("input#user-name");
     By validPassword = By.cssSelector("input#password");
     By wrongPassword = By.cssSelector("input#password");
-    By loginButton = By.cssSelector("input#login-button");
+    By loginButton = By.id("login-button");
     By errorMessage = By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]");
 
 

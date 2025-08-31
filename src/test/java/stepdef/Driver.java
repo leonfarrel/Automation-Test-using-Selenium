@@ -9,6 +9,11 @@ public class Driver {
     protected static WebDriver driver;
 
     protected void getDriver(){
+        ChromeOptions options = new ChromeOptions();
+
+        // Disable password manager + leak detection popup
+        options.addArguments("--incognito");
+        options.addArguments("--disable-features=PasswordManagerEnabled,PasswordLeakDetection");
 
         driver = WebDriverManager.chromedriver().create();
     }
@@ -16,6 +21,10 @@ public class Driver {
     protected void getDriverHeadless(){
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+
+        // Disable password manager + leak detection popup
+        options.addArguments("--incognito");
+        options.addArguments("--disable-features=PasswordManagerEnabled,PasswordLeakDetection");
 
         WebDriverManager.chromedriver().setup();
 
