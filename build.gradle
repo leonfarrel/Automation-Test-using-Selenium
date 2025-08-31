@@ -26,3 +26,28 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+tasks.register('cucumber') {
+    description = "Running Cucumber Test"
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime +
+                    sourceSets.main.output +
+                    sourceSets.test.output
+            args = [
+
+'--plugin', 'pretty',
+'--glue', 'stepdef',
+'--tags', project.hasProperty('tags') ? project.tags : '',
+'src/test/resources'
+            ]
+        }
+    }
+}
