@@ -34,6 +34,13 @@ jobs:
     # Excute Gradle Command for running cucumber test
     - name: Execute Test
       run: ./gradlew cucumber
+
+    # Upload Test Report as Artifact
+    - name: Upload Test Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: cucumber-report
+        path: build/reports/cucumber/
           
 
 
